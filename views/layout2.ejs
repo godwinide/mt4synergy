@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MT4Synergy</title>
+
+	<!-- Mobile Specific Metas -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link type="image/x-icon" href=https://themes.templatescoder.com/cryptorius/html/demo/1-0/01-Dark-Theme/images/fav-icon.png" rel="icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/mt4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/mt4/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/mt4/css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="/mt4/css/animations.css">
+    <link rel="stylesheet" type="text/css" href="/mt4/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/mt4/css/color.css">
+    <link rel="stylesheet" type="text/css" href="/mt4/css/responsive.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<script src="/mt4/js/jquery-3.4.1.min.js"></script>
+	
+	<style>
+	    
+	    @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.custom-social-proof {
+  position: fixed;
+      top: 15%;
+    right: 5%;
+  z-index: 9999999999 !important;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+}
+.custom-social-proof .custom-notification {
+  width: 300px;
+  border: 0;
+  text-align: left;
+  z-index: 99999;
+  box-sizing: border-box;
+  font-size: 24px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px 2px rgba(11, 10, 10, 0.2);
+  background-color: #24A9CE;
+  position: relative;
+  cursor: pointer;
+}
+.custom-social-proof .custom-notification .custom-notification-container {
+  display: flex !important;
+  align-items: center;
+  height: 50px;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-image-wrapper img {
+  max-height: 75px;
+  width: 90px;
+  overflow: hidden;
+  border-radius: 6px 0 0 6px;
+  object-fit: cover;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper {
+  margin: 0;
+  height: 100%;
+  color: gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0 6px 6px 0;
+  flex: 1;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content {
+  font-family: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14px;
+  line-height: 16px;
+}
+.custom-social-proof .custom-notification .custom-notification-container .custom-notification-content-wrapper .custom-notification-content small {
+  margin-top: 3px !important;
+  display: block !important;
+  font-size: 12px !important;
+  opacity: 0.8;
+}
+.custom-social-proof .custom-notification .custom-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.custom-social-proof .custom-notification .custom-close::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+.custom-social-proof .custom-notification .custom-close::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 2px;
+  background-color: gray;
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+.custom-social-proof .custom-notification:hover .custom-close {
+  opacity: 1;
+}
+
+.poweredby {
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 3px;
+  color: #3498db;
+}
+	    
+	    
+	</style>
+	</head>
+	<body>
+
+    <header class="header">
+      <div
+      style="z-index: 1000; position: relative"
+      id="google_translate_element"
+    ></div>
+    
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-4 col-8 d-flex flex-center">
+						<div class="logo">
+							<a href="/"><img src="/mt4/images/logo.png" alt="Cryptorius Logo"></a>
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-8 col-md-8 col-4">
+						<div class="menu-toggle">
+							<span></span>
+						</div>
+						<div class="main-menu">
+							<div class="nav-menu text-right">
+								<ul>
+									<li><a href="/">Home</a></li>
+									<li><a href="/about">About</a></li>
+                                    <li><a href="/features">Features</a></li>
+									<li><a href="/faq">FAQs</a></li>
+                                    <li><a href="/contact">Contact</a></li>
+								</ul>
+							</div>
+							<div class="login-box">
+								<a href="/signin" class="button">Sign in</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>	
+
+
+
+        <%-body%>
+    
+        <script type="text/javascript">
+          function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+              { pageLanguage: "en" },
+              "google_translate_element"
+            );
+          }
+        </script>
+    
+        <script
+          type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?
+    cb=googleTranslateElementInit"
+        ></script>
+
+
+
+		<script>
+
+		
+		    var r_text = new Array ();
+r_text[0] = "Michael";
+r_text[1] = "Ella";
+r_text[2] = "Alice";
+r_text[3] = "Jess";
+r_text[5] = "Bodmin";
+r_text[4] = "Joshua";
+r_text[6] = "Connor";
+r_text[7] = "Joe";
+r_text[8] = "Adam";
+r_text[9] = "Sophie";
+r_text[10] = "Oliver";
+r_text[11] = "Grace";
+r_text[12] = "Lucas";
+r_text[13] = "Charlotte";
+r_text[14] = "Liam";
+r_text[15] = "Ava";
+r_text[16] = "Ethan";
+r_text[17] = "Mia";
+r_text[18] = "Alexander";
+r_text[19] = "Isabella";
+r_text[20] = "Mason";
+r_text[21] = "Evelyn";
+r_text[22] = "Noah";
+r_text[23] = "Sophia";
+r_text[24] = "Logan";
+r_text[25] = "Avery";
+r_text[26] = "Caleb";
+r_text[27] = "Harper";
+r_text[28] = "Benjamin";
+r_text[29] = "Chloe";
+
+
+    var r_map = new Array ();
+r_map[0] = "favicon.html";
+r_map[1] = "favicon.html";
+r_map[2] = "favicon.html";
+r_map[4] = "favicon.html";
+r_map[5] = "favicon.html";
+r_map[6] = "favicon.html";
+
+ 
+var r_product = new Array ();
+r_product[0] = "South Bucks has just earned $50,560";
+r_product[1] = "Texas has just earned $34,700";
+r_product[2] = "London has just earned $20,000";
+r_product[3] = "Belgium has just earned $18,000";
+r_product[4] = "Turkey has just earned $29,000";
+r_product[5] = "Beaconsfield has just earned $87,500";
+r_product[6] = "Central Bedfordshire has just earned $200,000";
+r_product[7] = "Lostwithiel has just earned $12,000";
+r_product[8] = "Los Angeles has just earned $75,000";
+r_product[9] = "Mumbai has just earned $44,500";
+r_product[10] = "Paris has just earned $62,000";
+r_product[11] = "Berlin has just earned $28,000";
+r_product[12] = "New York has just earned $90,000";
+r_product[13] = "Madrid has just earned $35,500";
+r_product[14] = "Dublin has just earned $49,500";
+r_product[15] = "Moscow has just earned $53,000";
+r_product[16] = "Shanghai has just earned $39,000";
+r_product[17] = "Tokyo has just earned $71,000";
+r_product[18] = "Hong Kong has just earned $66,500";
+r_product[19] = "Singapore has just earned $57,000";
+r_product[20] = "Sydney has just earned $80,000";
+r_product[21] = "Toronto has just earned $55,500";
+r_product[22] = "Rio de Janeiro has just earned $29,500";
+r_product[23] = "Buenos Aires has just earned $31,000";
+r_product[24] = "Cape Town has just earned $22,500";
+r_product[25] = "Rome has just earned $42,000";
+r_product[26] = "Vienna has just earned $36,500";
+r_product[27] = "Athens has just earned $24,500";
+
+// Initialize last value to null
+var lastValue = null;
+
+// Hide the section initially
+$(".custom-social-proof").hide();
+
+setInterval(function() {
+  // Generate a random index for each array
+  var textIndex = Math.floor(Math.random() * r_text.length);
+  var productIndex = Math.floor(Math.random() * r_product.length);
+  
+  // Make sure the new index is different from the last one
+  while (textIndex === lastValue) {
+    textIndex = Math.floor(Math.random() * r_text.length);
+  }
+  
+  // Set the new values and fade in/out
+  $(".custom-notification-content").fadeOut('slow', function() {
+    $('#country').text(r_text[textIndex]);
+    $('#product').text(r_product[productIndex]);
+    var timeVal = Math.floor(Math.random() * 50) + 1;
+     $('#time').text(timeVal + " Minute" + (timeVal > 1 ? "s" : "") + " ago")
+    $(this).fadeIn('slow');
+  });
+
+  // Update the last value
+  lastValue = textIndex;
+
+  // Show the section
+  $(".custom-social-proof").stop().slideDown('slow').delay(5000).slideUp('slow');
+}, 7000);
+
+$(".custom-close").click(function() {
+  $(".custom-social-proof").stop().slideUp('slow');
+});
+		</script>
+
+        <footer class="footer purple relative pt-100" id="footer">
+			<canvas id="footer-dots"></canvas>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="section-heading text-center">
+							<h6 class="sub-title text-uppercase wow fadeInUp">CONTACT</h6>
+							<h2 class="title wow fadeInUp">Get In Touch</h2>
+							<p class="wow fadeInUp">Have an enquiry or you would like to get in touch with us? Please drop us a message..</p>
+						</div>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<ul class="contact-link wow fadeInUp">
+							<li>
+								<span class="contact-icon"><img src="/mt4/images/mail.png" alt="Mail Icon"></span>
+								<a href="mailto:support@mt4synergy.com">support@mt4synergy.com </a>
+							</li>
+							<li>
+								<span class="contact-icon"><img src="/mt4/images/phone.png" alt="Phone Icon"></span>
+								<a href="/signin">VIP Members Only</a>
+							</li>
+							<li>
+								<span class="contact-icon"><img src="/mt4/images/location-icon.png" alt="Telegram Icon"></span>
+								<a href="#">2702 N Proctor St, Tacoma, WA 98407</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<form method="post" action="#" class="get-touch wow fadeInUp">
+                        							<div class="row">
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="form-group">
+										<input type="text" name="name" class="form-control" placeholder="Your Name*" required="">
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 col-md-6">
+									<div class="form-group">
+										<input type="text" name="email" class="form-control" placeholder="Your Email*" required="">
+									</div>
+								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" name="msg" placeholder="Your Message*"></textarea>
+									</div>
+								</div>
+								<div class="col-xl-12 col-lg-12 col-md-12 text-center">
+									<button class="button" name="submit" type="submit">Send Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="copyright mt-100">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-8 col-lg-8 col-md-9 order-r-2">
+							<p>&#9400; copyright all Rights Reserved.</p>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-3 order-r-1">
+							<ul>
+								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+    <script src="//code.tidio.co/ovjb4pznqppiys6ov5r4vwn5hupl2nfp.js" async></script>
+
+    <script
+    type="text/javascript"
+    src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit"
+  ></script>
+
+        <script async src="/mt4/static.coinstats.app/widgets/coin-converter-widget.js"></script>
+		<script src="/mt4/js/jquery-3.4.1.min.js"></script>
+		<script src="/mt4/js/bootstrap.min.js"></script>
+		<script src="/mt4/js/owl.carousel.min.js"></script>
+		<script src="/mt4/js/animation.js"></script>
+		<script src="/mt4/js/footer-canvas.js"></script>
+		<script src="/mt4/js/custom.js"></script>
+</html>

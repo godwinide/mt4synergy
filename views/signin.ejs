@@ -1,0 +1,82 @@
+<main class="main">
+  <section class="page-banner text-center relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12">
+          <h1 class="page-title">Login</h1>
+          <ul class="breadcum">
+            <li><a href="/">Home</a></li>
+            <li>Login</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="login bluish-purple relative overflow-h ptb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12">
+          <div class="user-table">
+            <div class="section-heading text-center">
+              <h2 class="title">Login</h2>
+            </div>
+            <h4></h4>
+            <br />
+            <form class="login-form" method="post" action="/signin">
+              <%- include("./partials/messages") %>
+              <div class="form-group">
+                <label class="form-label">Username</label>
+                <input
+                  type="text"
+                  name="username"
+                  class="form-control"
+                  placeholder="Username"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Password</label>
+                <input
+                  type="password"
+                  name="password"
+                  class="form-control"
+                  placeholder="Enter your Password"
+                  required=""
+                />
+              </div>
+              <div class="login-btn-g">
+                <div class="row">
+                  <div class="col-7 d-flex flex-center">
+                    <div class="check-box">
+                      <span>
+                        <input
+                          type="checkbox"
+                          class="checkbox"
+                          id="account"
+                          name="Create an Account?"
+                        />
+                        <label for="account">Remember Me</label>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-5 d-flex flex-center justify-right">
+                    <button name="submit" type="submit" class="button">
+                      Log In
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="new-account text-center mt-20">
+                <span>Don't have an account?</span>
+                <a class="link" title="Create New Account" href="/signup"
+                  >Create New Account</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
